@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails: Welcome aboard</title>
+    <title>Baconverse</title>
     <style type="text/css" media="screen">
       body {
         margin: 0;
         margin-bottom: 25px;
         padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        background-color: #990000;
+        font-family:Arial, Helvetica, sans-serif;
         font-size: 13px;
         color: #333;
+		background-image: url('images/hipsterglobe.png'), url('images/bacon.png');
+		background-repeat:no-repeat;
+		background-position:right bottom, left bottom;
       }
 
       h1 {
@@ -27,11 +30,13 @@
 
 
       #page {
-        background-color: #f0f0f0;
+        background-color: #FFCC00;
         width: 750px;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
+		border-style: solid;
+		border-width: medium;
       }
 
       #content {
@@ -44,7 +49,7 @@
       }
 
       #sidebar {
-        float: right;
+        float: left;
         width: 175px;
       }
 
@@ -53,17 +58,13 @@
       }
 
 
-      #header, #about, #getting-started {
+      #header, #about, #blurb {
         padding-left: 75px;
         padding-right: 30px;
       }
 
 
       #header {
-        background-image: url("images/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
       }
       #header h1, #header h2 {margin: 0}
       #header h2 {
@@ -114,38 +115,38 @@
       }
 
 
-      #getting-started {
+      #blurb {
         border-top: 1px solid #ccc;
         margin-top: 25px;
         padding-top: 15px;
       }
-      #getting-started h1 {
+      #blurb h1 {
         margin: 0;
         font-size: 20px;
       }
-      #getting-started h2 {
+      #blurb h2 {
         margin: 0;
         font-size: 14px;
         font-weight: normal;
         color: #333;
         margin-bottom: 25px;
       }
-      #getting-started ol {
+      #blurb ol {
         margin-left: 0;
         padding-left: 0;
       }
-      #getting-started li {
+      #blurb li {
         font-size: 18px;
         color: #888;
         margin-bottom: 25px;
       }
-      #getting-started li h2 {
+      #blurb li h2 {
         margin: 0;
         font-weight: normal;
         font-size: 18px;
         color: #333;
       }
-      #getting-started li p {
+      #blurb li p {
         color: #555;
         font-size: 13px;
       }
@@ -168,6 +169,8 @@
         margin-bottom: 5px;
       }
 
+	  #sidebar a:link {text-decoration:none;}
+
     </style>
     <script type="text/javascript">
       function about() {
@@ -188,12 +191,13 @@
       <div id="sidebar">
         <ul id="sidebar-items">
           <li>
-            <h3>Browse the documentation</h3>
             <ul class="links">
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
-              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
+              <li><a href=" ">Login</a></li>
+              <li><a href=" ">Friend Location List</a></li>
+              <li><a href=" ">Friend Map</a></li>
+              <li><a href=" ">Proximity Detector</a></li>
+			  <li><a href=" ">Mutual Friend Locator (Beta)</a></li>
+			  <li><a href=" ">Next Step: Profit</a></li>
             </ul>
           </li>
         </ul>
@@ -201,34 +205,29 @@
 
       <div id="content">
         <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
+          <h1>Baconverse</h1>
+          <h2>Because everyone knows someone, unless you&rsquo;re a hermit (raised by hermits)</h2>
         </div>
 
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
+        <div id="blurb">
+          <h1>Blurb</h1>
+          <h2>Text about what our app does</h2>
 
           <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
+            
+              <h2>Use rails generate to create your models and controllers</h2>
               <p>To see all available options, run it without parameters.</p>
-            </li>
+            
 
-            <li>
+            
               <h2>Set up a default route and remove or rename this file</h2>
               <p>Routes are set up in config/routes.rb.</p>
-            </li>
+            
 
-            <li>
+            
               <h2>Create your database</h2>
-              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
-            </li>
+              <p>Run rake db:migrate to create your database. If you're not using SQLite (the default), edit config/database.yml with your username and password.</p>
+            
           </ol>
         </div>
       </div>
